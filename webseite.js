@@ -223,3 +223,21 @@ saveSectionBtn.addEventListener('click', () => {
   selectedSection.querySelector('p').textContent = editSectionContent.value;
   alert('Section updated successfully!');
 });
+
+// Popup Ad __________________________________________
+
+// Select the popup ad and close button
+const popupAd = document.getElementById('popup-ad');
+const closePopupAdBtn = document.getElementById('close-popup-ad-btn');
+
+// Show the popup ad 5 seconds after the page loads
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    popupAd.style.display = 'flex'; // Show the popup ad
+  }, 5000); // 5000ms = 5 seconds
+});
+
+// Close the popup ad when the close button is clicked
+closePopupAdBtn.addEventListener('click', () => {
+  popupAd.style.display = 'none'; // Hide the popup ad
+});
