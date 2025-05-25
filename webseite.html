@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Blog</title>
+  <link rel="stylesheet" href="webseite.css" />
+</head>
+<body>
+  <header>
+    <div class="banner-text">
+      <h1>Welcome to My Travel Blog</h1>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">Europe &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="italy/italy.html">Italy</a></li>
+          <li><a href="france/france.html">France</a></li>
+          <li><a href="germany/germany.html">Germany</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Asia &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="japan/japan.html">Japan</a></li>
+          <li><a href="china/china.html">China</a></li>
+          <li><a href="thailand/thailand.html">Thailand</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">North America &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="usa/usa.html">USA</a></li>
+          <li><a href="canada/canada.html">Canada</a></li>
+          <li><a href="mexico/mexico.html">Mexico</a></li>
+        </ul>
+      </li>
+      <img src="Profil-Bild.png" alt="Logo" class="logo">
+      <li>
+        <a href="#">South America &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="brazil/brazil.html">Brazil</a></li>
+          <li><a href="argentina/argentina.html">Argentina</a></li>
+          <li><a href="peru/peru.html">Peru</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Oceania &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="australia/australia.html">Australia</a></li>
+          <li><a href="newzealand/newzealand.html">New Zealand</a></li>
+          <li><a href="fiji/fiji.html">Fiji</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Africa &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="egypt/egypt.html">Egypt</a></li>
+          <li><a href="southafrica/southafrica.html">South Africa</a></li>
+          <li><a href="morocco/morocco.html">Morocco</a></li>
+        </ul>
+      </li>
+  </nav>
+  
+  <div>
+    <!-- Search Bar -->
+      <div class="search-bar">
+        <form action="/search" method="GET">
+          <input type="text" name="query" placeholder="Search..." aria-label="Search">
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+    </div>
+
+  <main>
+    <div class="white-box" id="home">
+      <h2>Home</h2>
+      <p>This is the home of my website. I will be posting announcements here.</p>
+    </div>
+
+    <div class="white-box" id="about">
+      <h2>About Me</h2>
+      <p>I’m [Your Name], a curious soul with an insatiable love for exploring new places, cultures, and cuisines.</p>
+      <p>What started as a weekend escape from the 9-to-5 turned into a full-blown passion for travel — and this blog is where I share that journey.</p>
+      <p>From hidden alleyways in ancient cities to sunrise hikes in the mountains, I believe every corner of the world has a story worth telling.</p>
+      <p>Through my travel guides, photos, and reflections, I hope to inspire you to step outside your comfort zone and create your own adventures.</p>
+      <p>When I’m not on a plane or lost in Google Maps, you’ll find me journaling in cozy cafés, trying to master a new language, or planning the next trip. </p>
+      <p>Thanks for stopping by — let’s explore the world, one destination at a time.</p>
+    </div>
+
+    <div class="white-box" id="contact">
+      <h2>Contact</h2>
+      <p>If you want to get in touch, feel free to reach out!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Travel Blog. All rights reserved.</p>
+    <!-- Admin Login Modal -->
+    <button id="admin-login-btn" class="admin-toggle-btn">Admin Login</button>
+<div id="admin-login-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-admin-login-btn" class="close-btn">&times;</span>
+    <h2>Admin Login</h2>
+    <form id="admin-login-form">
+      <label for="admin-password">Password:</label>
+      <input type="password" id="admin-password" name="admin-password" placeholder="Enter your password" required />
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+  </div>
+</div>
+  </footer>
+
+<!-- Admin Dashboard Modal -->
+<div id="admin-dashboard-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-admin-dashboard-btn" class="close-btn">&times;</span>
+    <h2>Admin Dashboard</h2>
+    <div class="admin-actions">
+      <button id="add-section-btn" class="dashboard-btn">Add New Section</button>
+      <button id="edit-section-btn" class="dashboard-btn">Edit Existing Sections</button>
+    </div>
+
+    <!-- Add Section Form -->
+    <div id="add-section-form" class="hidden">
+      <h3>Add New Section</h3>
+      <form id="new-section-form">
+        <label for="section-title">Section Title:</label>
+        <input type="text" id="section-title" name="section-title" placeholder="Enter section title" required />
+
+        <label for="section-content">Section Content:</label>
+        <textarea id="section-content" name="section-content" placeholder="Enter section content" rows="5" required></textarea>
+
+        <button type="submit" class="submit-btn">Add Section</button>
+      </form>
+    </div>
+
+    <!-- Edit Section Form -->
+    <div id="edit-section-form" class="hidden">
+      <h3>Edit Existing Sections</h3>
+      <form id="edit-section-form-content">
+        <label for="section-select">Select Section:</label>
+        <select id="section-select">
+          <!-- Options will be dynamically populated -->
+        </select>
+
+        <label for="edit-section-title">Edit Title:</label>
+        <input type="text" id="edit-section-title" placeholder="Edit section title" />
+
+        <label for="edit-section-content">Edit Content:</label>
+        <textarea id="edit-section-content" rows="5" placeholder="Edit section content"></textarea>
+
+        <button id="save-section-btn" class="submit-btn">Save Changes</button>
+      </form>
+    </div>
+  </div>
+</div>
+  <script src="webseite.js"></script>
+</body>
+</html>
