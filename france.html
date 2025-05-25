@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>France Page</title>
+  <link rel="stylesheet" href="france.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop>
+      <source src="background_video.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Content Overlay -->
+  <div class="content-overlay">
+    <header>
+      <h1>Welcome to France</h1>
+      <p>Discover the beauty, culture, and history of France.</p>
+    </header>
+
+    <main>
+      <section id="comments-section">
+        <h2>Comments</h2>
+        <div id="comments-list">
+          <!-- Comments will be dynamically loaded here -->
+        </div>
+        <form id="comment-form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <textarea id="comment" placeholder="Your Comment" required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+      </section>
+    </main>
+
+    <button class="dark-mode-toggle" id="dark-mode-toggle">🌙 Dark Mode</button>
+  </div>
+
+  <script src="france.js"></script>
+</body>
+</html>
