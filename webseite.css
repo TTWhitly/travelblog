@@ -183,6 +183,8 @@ footer {
         height: 120px;
         bottom: -60px;
     }
+    search-bar {
+        align-items: center;
 }
 
 /* Search Bar Styles */
