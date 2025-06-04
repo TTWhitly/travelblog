@@ -3,9 +3,9 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to top, #ff7e32, #ff512f);
-    color: #333;
+    color: #000;
 }
 
 /* Header Section with Centered Banner Text */
@@ -18,9 +18,6 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
 }
 
 /* Optional Text Overlay on Header */
@@ -67,7 +64,6 @@ nav ul {
     font-size: 1.2em;
     font-family: 'Courier New', Courier, monospace;
     flex-wrap: wrap;
-    background-color: #333;
 }
 
 /* Menu Item */
@@ -79,7 +75,7 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 15px 10px;
-    color: white;
+    color: black;
     text-decoration: none;
     transition: transform 0.2s ease, color 0.2s ease;
   }
@@ -87,7 +83,6 @@ nav ul li a {
   nav ul li a:hover {
     transform: scale(1.1); /* Makes the link slightly bigger */
     color: #ff512f; /* Changes the color for extra flair */
-    background-color: #575757;
   }
 
 /* Dropdown Menu Styles */
@@ -96,7 +91,7 @@ nav ul li .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: white;
     border: 1px solid #ddd;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     min-width: 180px;
@@ -117,24 +112,25 @@ nav ul li:hover .dropdown-menu {
 
 nav ul li .dropdown-menu li a {
     padding: 10px 15px;
-    color: white;
-    background-color: #333;
+    color: black;
+    background-color: white;
     display: block;
     text-align: left;
 }
 
 nav ul li .dropdown-menu li a:hover {
-    background-color: #575757;
+    background-color: #ffe0d0;
+    color: #ff512f;
 }
 
 /* White content boxes */
 .white-box {
     background-color: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -166,7 +162,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
     font-size: 0.9em;
 }
 
@@ -179,8 +175,6 @@ footer {
 
     header {
         height: 220px;
-        font-size: 1.2em; /* Smaller font size for header */
-        padding: 15px;
     }
 
     header::after {
@@ -188,54 +182,27 @@ footer {
         height: 120px;
         bottom: -60px;
     }
-
-    .white-box {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .search-bar form {
-        flex-direction: column; /* Stack search bar elements */
-    }
-
-    .search-bar input,
-    .search-bar button {
-        width: 100%; /* Full width for smaller screens */
-        margin: 5px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        font-size: 1.2em; /* Smaller font size for header */
-        padding: 15px;
-    }
-
-    .white-box {
-        padding: 10px;
-    }
-
-    .modal-content {
-        width: 90%; /* Adjust modal width for smaller screens */
-    }
 }
 
 /* Search Bar Styles */
 .search-bar {
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 805px;
+    margin-left: auto; /* Push the search bar to the right */
+    display: flex;
+    align-items: center;
+    margin-left: 765px;
 }
   
 .search-bar form {
     display: flex;
+    align-items: center;
+    gap: 5px;
 }
   
 .search-bar input[type="text"] {
-    padding: 10px;
+    padding: 8px 10px;
     font-size: 1em;
     border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
     outline: none;
     transition: border-color 0.3s ease;
   }
@@ -245,12 +212,12 @@ footer {
 }
   
 .search-bar button {
-    padding: 10px;
+    padding: 8px 12px;
     font-size: 1em;
     color: white;
-    background-color: #007bff;
+    background-color: #ff512f;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border: #000;
@@ -258,7 +225,7 @@ footer {
 }
   
 .search-bar button:hover {
-    background-color: #0056b3;
+    background-color: #e04a2b;
 }
 
 /* Search Results Styles */
@@ -512,3 +479,73 @@ footer {
     background-color: #0056b3;
   }
 
+  /* Chatbot Styles */
+#chatbot-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+#chatbot-toggle {
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+#chatbot-window {
+  width: 320px;
+  height: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+}
+#chatbot-window.hidden {
+  display: none;
+}
+#chatbot-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  font-size: 15px;
+}
+#chatbot-form {
+  display: flex;
+  border-top: 1px solid #eee;
+}
+#chatbot-input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 0 0 0 12px;
+  outline: none;
+}
+#chatbot-form button {
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  padding: 0 18px;
+  border-radius: 0 0 12px 0;
+  cursor: pointer;
+}
+#chatbot-messages .user {
+  text-align: right;
+  margin-bottom: 8px;
+  color: #0078d7;
+}
+#chatbot-messages .bot {
+  text-align: left;
+  margin-bottom: 8px;
+  color: #222;
+}
