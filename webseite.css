@@ -4,7 +4,8 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to top, #ff7e32, #ff512f);
+    background: white;
+    
     color: #000;
 }
 
