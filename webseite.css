@@ -160,6 +160,11 @@ nav ul li .dropdown-menu li a:hover {
       height: 120px;
       bottom: -60px;
   }
+
+  #main-menu-1 {
+     text-size: 10px,
+
+  }
 }
 
 /* Search Bar Styles */
