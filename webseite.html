@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog</title>
+  <link rel="stylesheet" href="webseite/webseite.css" />
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay muted loop>
+      <source src="Media/background-clip-v2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <header id="header-pc">
+    <a href="webseite.html"><img href="webseite.html" id="logo" src="Media/logo.png" alt="Logo" class="logo"></a>
+    <div class="banner-text">
+      <h1>Welcome to My Travel Blog</h1>
+    </div>
+  </header>
+  <header id="header-mobile">
+    <a href="webseite.html"><img href="webseite.html" id="logo" src="Media/logo.png" alt="Logo" class="logo"></a>
+    <div class="banner-text">
+      <h1 id="mobile-header-content">Welcome!</h1>
+    </div>
+  </header>
+  <nav id="pc-nav">
+    <ul>
+    <ul class="nav-menu" id="main-menu-1">
+      <li>
+        <a id="forum" href="Forum/forum.html">Forum</a>
+      </li>
+      <li>
+        <a href="#">Europe &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="europe/italy/italy.html">Italy</a></li>
+          <li><a href="europe/france/france.html">France</a></li>
+          <li><a href="germany.html">Germany</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Asia &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="Asia/japan/japan.html">Japan</a></li>
+          <li><a href="Asia/china/china.html">China</a></li>
+          <li><a href="Asia/thailand/thailand.html">Thailand</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">North America &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="usa/usa.html">USA</a></li>
+          <li><a href="canada/canada.html">Canada</a></li>
+          <li><a href="mexico/mexico.html">Mexico</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav-menu" id ="main-menu-2">
+      <li>
+        <a href="#">South America &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="brazil/brazil.html">Brazil</a></li>
+          <li><a href="argentina/argentina.html">Argentina</a></li>
+          <li><a href="peru/peru.html">Peru</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Oceania &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="australia/australia.html">Australia</a></li>
+          <li><a href="newzealand/newzealand.html">New Zealand</a></li>
+          <li><a href="fiji/fiji.html">Fiji</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Africa &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="egypt/egypt.html">Egypt</a></li>
+          <li><a href="southafrica/southafrica.html">South Africa</a></li>
+          <li><a href="morocco/morocco.html">Morocco</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Settings</a>
+      </li>
+    </ul>
+  </ul>
+  </nav>
+
+  <button class="hamburger-btn" id="hamburger-btn">&#9776;</button>
+  <nav class="side-menu" id="side-menu">
+  <ul>
+    <li>
+      <a href="#">Europe</a>
+      <ul class="dropdown-menu">
+        <li><a href="europe/italy/italy.html">Italy</a></li>
+        <li><a href="europe/france/france.html">France</a></li>
+        <li><a href="germany.html">Germany</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Asia</a>
+      <ul class="dropdown-menu">
+        <li><a href="Asia/japan/japan.html">Japan</a></li>
+        <li><a href="Asia/china/china.html">China</a></li>
+        <li><a href="Asia/thailand/thailand.html">Thailand</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">North America</a>
+      <ul class="dropdown-menu">
+        <li><a href="usa/usa.html">USA</a></li>
+        <li><a href="canada/canada.html">Canada</a></li>
+        <li><a href="mexico/mexico.html">Mexico</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">South America</a>
+      <ul class="dropdown-menu">
+        <li><a href="brazil/brazil.html">Brazil</a></li>
+        <li><a href="argentina/argentina.html">Argentina</a></li>
+        <li><a href="peru/peru.html">Peru</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Oceania</a>
+      <ul class="dropdown-menu">
+        <li><a href="australia/australia.html">Australia</a></li>
+        <li><a href="newzealand/newzealand.html">New Zealand</a></li>
+        <li><a href="fiji/fiji.html">Fiji</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Africa</a>
+      <ul class="dropdown-menu">
+        <li><a href="egypt/egypt.html">Egypt</a></li>
+        <li><a href="southafrica/southafrica.html">South Africa</a></li>
+        <li><a href="morocco/morocco.html">Morocco</a></li>
+      </ul>
+    </li>
+    <a>Settings</a>
+  </ul>
+  </nav>
+  <div id="overlay"></div>
+
+  <ul>
+    <!-- Search Bar -->
+      <li class="search-bar">
+        <form action="/search" method="GET">
+          <input type="text" name="query" placeholder="Search..." aria-label="Search">
+          <button type="submit">🔍</button>
+        </form>
+      </li>
+  </ul>
+
+  <main>
+    <div class="white-box" id="home">
+      <h2>Home</h2>
+      <p>This is the home of my website. I will be posting announcements here.</p>
+      <p id="version">Latest update version 0.8.5</p>
+      <p>New features:</p>
+      <ul>
+        <li class="home-p">About Me Section updated</li>
+        <li class="home-p"></li>
+        <li class="home-p">Website Background updated</li>
+        <li class="home-p">Navbar font changed</li>
+      </ul>
+    </div>
+
+    <div class="white-box" id="about">
+      <h2>About Me</h2>
+      <p>Ava Thompson</p>
+      <p>Hi, I'm Ava Thompson and welcome to my travel blog!</p>
+      <p>I'm a travel writer and photographer with a passion for exploring the world's hidden gems.</p>
+      <p>After cancelling my 9-to-5 job to travel full-time, I've spent the last few years discovering new</p>
+      <p>places, meeting incredible people and capturing the beauty of each destination.</p>
+
+      <p>On this blog I share my honest reviews about all my journeys. From the bustling streets of</p>
+      <p>cities to peaceful corners of nature, my goal is to share the joy of travel and help you discover</p>
+      <p>all the hidden secrets about the world.</p>
+    </div>
+
+    <div class="white-box" id="contact">
+      <h2>Contact</h2>
+      <p>If you want to get in touch, feel free to reach out!</p>
+    </div>
+
+  </main>
+  <footer>
+    <p>&copy; 2023 My Travel Blog. All rights reserved.</p>
+    <!-- Admin Login Modal -->
+    <button id="admin-login-btn" class="admin-toggle-btn">Admin Login</button>
+<div id="admin-login-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-admin-login-btn" class="close-btn">&times;</span>
+    <h2>Admin Login</h2>
+    <form id="admin-login-form">
+      <label for="admin-password">Password:</label>
+      <input type="password" id="admin-password" name="admin-password" placeholder="Enter your password" required />
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+  </div>
+</div>
+  <a class="links" href="other/games/chess/index.html">chess</a>
+  </footer>
+
+  
+
+<!-- Admin Dashboard Modal -->
+<div id="admin-dashboard-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-admin-dashboard-btn" class="close-btn">&times;</span>
+    <h2>Admin Dashboard</h2>
+    <div class="admin-actions">
+      <button id="add-section-btn" class="dashboard-btn">Add New Section</button>
+      <button id="edit-section-btn" class="dashboard-btn">Edit Existing Sections</button>
+    </div>
+
+    <!-- Add Section Form -->
+    <div id="add-section-form" class="hidden">
+      <h3>Add New Section</h3>
+      <form id="new-section-form">
+        <label for="section-title">Section Title:</label>
+        <input type="text" id="section-title" name="section-title" placeholder="Enter section title" required />
+
+        <label for="section-content">Section Content:</label>
+        <textarea id="section-content" name="section-content" placeholder="Enter section content" rows="5" required></textarea>
+
+        <button type="submit" class="submit-btn">Add Section</button>
+      </form>
+    </div>
+
+    <!-- Edit Section Form -->
+    <div id="edit-section-form" class="hidden">
+      <h3>Edit Existing Sections</h3>
+      <form id="edit-section-form-content">
+        <label for="section-select">Select Section:</label>
+        <select id="section-select">
+          <!-- Options will be dynamically populated -->
+        </select>
+
+        <label for="edit-section-title">Edit Title:</label>
+        <input type="text" id="edit-section-title" placeholder="Edit section title" />
+
+        <label for="edit-section-content">Edit Content:</label>
+        <textarea id="edit-section-content" rows="5" placeholder="Edit section content"></textarea>
+
+        <button id="save-section-btn" class="submit-btn">Save Changes</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('hamburger-btn');
+  const menu = document.getElementById('side-menu');
+  const overlay = document.getElementById('overlay');
+  btn.onclick = function() {
+    menu.classList.toggle('open');
+    overlay.classList.toggle('show');
+  };
+  overlay.onclick = function() {
+    menu.classList.remove('open');
+    overlay.classList.remove('show');
+  };
+</script>
+
+<script src="webseite/webseite.js"></script>
+<script type="py" src="webseite/webseite.py"></script>
+
+</body>
+</html>
