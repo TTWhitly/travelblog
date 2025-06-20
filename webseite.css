@@ -10,7 +10,7 @@ body, html {
 
 /* Header Section with Centered Banner Text */
 header {
-  background: url('Banner.jpg') no-repeat center bottom;
+  background: url('Banner.jpg') no-repeat center bottom !important;
   background-size: cover;
   height: 300px;
   display: flex;
