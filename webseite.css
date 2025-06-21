@@ -32,7 +32,7 @@ header {
 /* Compass Logo Overlay */
 header::after {
   content: "";
-  background: url('compass-logo.png') no-repeat center center;
+  background: url('logo.png') no-repeat center center;
   background-size: contain;
   width: 180px;
   height: 180px;
