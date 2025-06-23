@@ -594,6 +594,7 @@ input {
   height: 100%;
   z-index: -1;
   overflow: hidden;
+  size: cover;
 }
 
 .video-background video {
